@@ -10,7 +10,7 @@
 
 		<th>Unit Price</th>
 		<th>Tax(In %)</th>
-		<th>Total</th>
+		<th>Total(Without Tax)</th>
 		<th>Options</th>
 </tr>
 	</thead>
@@ -39,7 +39,7 @@
 		 </select> 
 </td>
 <td>
-	<input type="text" class="amountwithouttax" name="amountwithouttax[]" id="amountwithouttax">
+	<input type="text" class="amountwithouttax" name="amountwithouttax[]" id="amountwithouttax" readonly="readonly" style="border: none;">
 	<input type="hidden"  class="amount"  name="amount[]" id="amount" >
 </td>
 <td>
@@ -58,11 +58,11 @@
 			<table class="finalval" id="finalval">
 				<tr>
 					<td><label class="pull-right" style="font-weight: bolder;font-size: 20px;">Subtotal(Without Tax):</label> </td>
-					<td><input id="subtotaltaxwithouttax" style="display: inline-block;font-weight: bolder;font-size: 20px;border:none;width: 100px;" type="text"  name="subtotaltaxwithouttax" ></td>
+					<td><input id="subtotaltaxwithouttax" style="display: inline-block;font-weight: bolder;font-size: 20px;border:none;width: 100px;" type="text"  name="subtotaltaxwithouttax" readonly="readonly"></td>
 				</tr>
 				<tr>
 					<td><label class="pull-right" style="font-weight: bolder;font-size: 20px;">Subtotal(With Tax): </label> </td>
-					<td> <input id="subtotalwithtax" style="display: inline-block;font-weight: bolder;font-size: 20px;border:none;width: 100px;" type="text"  name="subtotalwithtax" value="" ></td>
+					<td> <input id="subtotalwithtax" style="display: inline-block;font-weight: bolder;font-size: 20px;border:none;width: 100px;" type="text"  name="subtotalwithtax" value="" readonly="readonly"></td>
 				</tr>
           <tr>
           <td><label class="pull-right" style="font-weight: bolder;font-size: 20px;">Discount choose type:</label> </td>
@@ -80,14 +80,14 @@
         </tr>
 				<tr>
 					<td><label class="pull-right" style="font-weight: bolder;font-size: 20px;">Total:</label> </td>
-					<td><input id="totalPrice" style="display: inline-block;font-weight: bolder;font-size: 20px;border:none;width: 100px;" type="text" id="totalPrice" name="totalPrice" value="" ></td>
+					<td><input id="totalPrice" style="display: inline-block;font-weight: bolder;font-size: 20px;border:none;width: 100px;" type="text" id="totalPrice" name="totalPrice" value=""  readonly="readonly"></td>
 				</tr>
 
 			</table>
 		</div>
 
 	<div class="col-md-12 col-xs-12 text-center">
-  		<button class="button btn-primary" type="submit">PRINT</button>
+  		<button class="button btn-primary" type="submit">Generate Invoice</button>
   </div>
 
    </div>
